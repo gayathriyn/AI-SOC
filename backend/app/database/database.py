@@ -13,9 +13,14 @@ SessionLocal = sessionmaker(
     autoflush=False,
     bind=engine
 )
+
 from app.database.base import Base
 from app.models.user import User
+from app.models.packet import Packet
+
 Base.metadata.create_all(bind=engine)
+
+
 def get_db():
     db = SessionLocal()
     try:
