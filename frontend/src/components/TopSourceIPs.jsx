@@ -24,7 +24,7 @@ function TopSourceIPs() {
   async function loadData() {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:8000/packets/top-source"
+        "https://ai-soc-x006.onrender.com/packets/top-source"
       );
 
       setData(response.data);

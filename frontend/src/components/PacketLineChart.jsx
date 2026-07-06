@@ -27,7 +27,7 @@ function PacketLineChart() {
   async function loadPackets() {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:8000/packets"
+        "https://ai-soc-x006.onrender.com/packets"
       );
 
       const chartData = response.data
